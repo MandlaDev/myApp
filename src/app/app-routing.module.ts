@@ -12,6 +12,10 @@ const routes: Routes = [
     path: 'tabs',
     loadChildren: () => import('./pages/tabs/tabs.module').then( m => m.TabsPageModule)
   },
+  {
+    path: 'payment-success-modal',
+    loadChildren: () => import('./pages/tabs/payment-success-modal/payment-success-modal.module').then( m => m.PaymentSuccessModalPageModule)
+  },
 ];
 
 @NgModule({
